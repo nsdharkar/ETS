@@ -1,0 +1,66 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<link href="../Contents/CSS/StyleSheet.css" rel="stylesheet" />
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ETS</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_container">
+            <div class="float_left header_leftbox textalign_left">
+                <img src="~/Contents/Images/logo.jpg" />
+            </div>
+            <div class="float_right" style="line-height: 20px;">
+                <div class="textalign_left margin_right10">
+                    <div>
+                        Welcome,
+                        @if (!string.IsNullOrEmpty(Convert.ToString(Session["user"])))
+                        {
+                            var uName = Convert.ToString(Session["user"]).Split('|');
+                            @Html.Label(uName[1]);
+                        }
+                    </div>
+                    <div>
+                        @Html.Label(Convert.ToString(DateTime.Now))
+                    </div>
+                    <div>
+                        @Html.ActionLink("Home", "Index")
+                        @if (!string.IsNullOrEmpty(Convert.ToString(Session["user"])))
+                        {
+                            @Html.ActionLink("|Change Password|", "Index")
+
+                            @Html.ActionLink("Logout", "Index","Logout")
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </div>
+    @if (!string.IsNullOrEmpty(Convert.ToString(Session["user"])))
+    {
+        <div class="margin_10 menuItemStyle">
+            @{Html.RenderAction("Index", "Menu");}
+        </div>
+        <div class="clear"></div>
+                }
+                else
+                { Response.Redirect("~/Login"); }
+
+    <div class="margin_10 content" align="center">
+        @RenderBody()
+    </div>
+    <div class="copyright">
+        Copyright © 2015.
+    </div>
+</body>
+</html>
+

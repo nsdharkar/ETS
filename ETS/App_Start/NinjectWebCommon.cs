@@ -69,6 +69,10 @@ namespace ETS.App_Start
 
             kernel.Bind<ILoginService>().To<LoginService>();
             kernel.Bind<ILoginRepository>().To<LoginRepository>();
+            kernel.Bind<IMenuService>().To<MenuService>();
+            kernel.Bind<IMenuRepository>().To<MenuRepository>();
+            kernel.Bind<ILogoutService>().To<LogoutService>();
+            kernel.Bind<ILogoutRepository>().To<LogoutRepository>();
         }        
     }
 }

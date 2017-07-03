@@ -10,13 +10,13 @@ namespace ETS.Models.Service
     public interface ILoginService
     {
         UserMaster CheckUserAuthentication(UserMaster userMaster);
+        string CreateUserSessionValue(UserMaster authenticatedUser);
+        void CreateUserLog(UserMaster userMaster);
     }
     public class LoginService : ILoginService
     {
         protected ILoginRepository LoginRepository { get; set; }
 
-        public LoginService()
-        { }
         public LoginService(ILoginRepository loginRepository)
         {
             LoginRepository = loginRepository;
@@ -33,6 +33,16 @@ namespace ETS.Models.Service
             }
             else
                 throw new ArgumentNullException("Username or password cannot be null or empty.");
+        }
+
+        public string CreateUserSessionValue(UserMaster authenticatedUser)
+        {
+            return authenticatedUser.UserId + "|" + authenticatedUser.UserName;
+        }
+
+        public void CreateUserLog(UserMaster userMaster)
+        {
+            LoginRepository.CreateUserLog(userMaster);
         }
     }
 }

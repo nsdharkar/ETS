@@ -30,7 +30,8 @@ namespace ETS.Controllers
                 var userAuthentication = LoginService.CheckUserAuthentication(userMaster);
                 if (userAuthentication != null)
                 {
-                    TempData["usrId"] = userAuthentication.UserId;
+                    LoginService.CreateUserLog(userAuthentication);
+                    Session["user"] = LoginService.CreateUserSessionValue(userAuthentication);
                     return RedirectToAction("Index", "Home");
                 }
                 else

@@ -42,3 +42,5 @@ C:\Projects\ETS\ETS\bin\Ninject.Web.Mvc.dll
 C:\Projects\ETS\ETS\bin\WebActivatorEx.dll
 C:\Projects\ETS\ETS\bin\Ninject.Web.Common.xml
 C:\Projects\ETS\ETS\bin\Ninject.Web.Mvc.xml
+C:\Projects\ETS\ETS\bin\log4net.dll
+C:\Projects\ETS\ETS\bin\log4net.xml

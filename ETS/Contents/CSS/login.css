@@ -1,0 +1,43 @@
+﻿.login_box {
+    margin: 150px 0px 0px 400px;
+    width: 40%;
+    color: #000;
+}
+
+.login_table {
+    width: 100%;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border: 3px solid #fff;
+    background-color: #9A9A9A;
+}
+
+.login_logo_border {
+    border-bottom: 1px solid #b4b4b4;
+}
+
+.login_header_title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px;
+    color: #000;
+    margin: 5px;
+}
+
+.login_inner_table {
+    background-color: #E0E0E0;
+}
+
+    .login_inner_table a {
+        color: #000;
+        font-weight:bold;
+    }
+
+.login_copyright {
+    padding: 10px;
+    background-color: #204562;
+    color: #fff;
+    text-align: center;
+}
