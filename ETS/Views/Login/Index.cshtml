@@ -30,19 +30,13 @@
                         <td align="center">
                             <table width="70%" class="login_inner_table" cellpadding="3" cellspacing="3">
                                 <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="3" class="error_msg"></td>
-                                </tr>
-                                <tr>
                                     <td style="text-align: left">User Name</td>
                                     <td style="text-align: left">
                                         @Html.TextBoxFor(emp => emp.UserName)
                                     </td>
-                                    <td style="text-align: left">
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center" colspan="2">
                                         @Html.ValidationMessageFor(emp => emp.UserName)
                                     </td>
                                 </tr>
@@ -51,20 +45,16 @@
                                     <td style="text-align: left">
                                         @Html.PasswordFor(emp => emp.Password)
                                     </td>
-                                    <td style="text-align: left">
-                                        @Html.ValidationMessageFor(emp => emp.Password)
                                 </tr>
                                 <tr>
-                                    <td style="text-align: left"></td>
-                                    <td style="text-align: left">
+                                    <td style="text-align: center" colspan="2">
+                                        @Html.ValidationMessageFor(emp => emp.Password)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: center" colspan="2">
                                         <input type="submit" value="Login" />
                                     </td>
-                                    <td style="text-align: left"></td>
-                                </tr>
-                                <tr>
-                                    <td style="text-align: left"></td>
-                                    <td style="text-align: left"></td>
-                                    <td style="text-align: left"></td>
                                 </tr>
                             </table>
                         </td>

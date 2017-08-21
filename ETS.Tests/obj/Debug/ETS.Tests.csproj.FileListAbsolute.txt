@@ -1,15 +1,3 @@
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\csc.exe
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.dll
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\Microsoft.CSharp.Core.targets
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\Microsoft.VisualBasic.Core.targets
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\System.Collections.Immutable.dll
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\System.Reflection.Metadata.dll
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\vbc.exe
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\VBCSCompiler.exe
-C:\Projects\ETS\ETS.Tests\bin\Debug\roslyn\VBCSCompiler.exe.config
 C:\Projects\ETS\ETS.Tests\bin\Debug\ETS.Tests.dll
 C:\Projects\ETS\ETS.Tests\bin\Debug\ETS.Tests.pdb
 C:\Projects\ETS\ETS.Tests\bin\Debug\ETS.dll
@@ -37,3 +25,5 @@ C:\Projects\ETS\ETS.Tests\bin\Debug\ETS.Tests.dll.config
 C:\Projects\ETS\ETS.Tests\bin\Debug\WebActivatorEx.dll
 C:\Projects\ETS\ETS.Tests\bin\Debug\Ninject.Web.Common.dll
 C:\Projects\ETS\ETS.Tests\bin\Debug\Ninject.Web.Common.xml
+C:\Projects\ETS\ETS.Tests\bin\Debug\log4net.dll
+C:\Projects\ETS\ETS.Tests\bin\Debug\log4net.xml
